@@ -30,7 +30,7 @@ qconnect(action.triggered, testFunction)
 mw.form.menuTools.addAction(action)
 
 def myfunc(card):
-    print("question shown, card question is:", card.q())
+    print("question shown, card question is:", card.question())
 
 def myfunc_answ(card):
     print("start total")
@@ -38,7 +38,7 @@ def myfunc_answ(card):
     print(card.id)
     print("end total")
     print("start get_content")
-    content_creatory.create_mind_map(card.a(), card.id)
+    content_creatory.create_mind_map(card.id)
 
 
 
